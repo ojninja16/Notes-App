@@ -54,6 +54,7 @@ const EditModal: React.FC<EditModalProps> = ({
           Title:
         </label>
         <input
+         placeholder="Add your title..."
           type="text"
           value={editedNote.title}
           onChange={(e) => {
@@ -70,6 +71,7 @@ const EditModal: React.FC<EditModalProps> = ({
           Content:
         </label>
         <textarea
+         placeholder="Write your content here..."
           value={editedNote.content}
           onChange={(e) => {
             setEditedNote({ ...editedNote, content: e.target.value });

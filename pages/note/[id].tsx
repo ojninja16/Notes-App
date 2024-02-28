@@ -29,8 +29,10 @@ const NoteDetail: React.FC = () => {
         <div className="p-4 bg-gray-100 rounded-md shadow-md" style={{ backgroundColor: selectedNote.color }}>
         <h1 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-2 sm:mb-4 md:mb-6 lg:mb-8">{selectedNote.title}</h1>
 <p className="text-gray-500 mb-2 sm:mb-4 md:mb-6 lg:mb-8 sm:text-base md:text-lg lg:text-lg">{selectedNote.timestamp.toLocaleString()}</p>
-<div className="bg-white p-2 sm:p-4 md:p-6 rounded-md">
-  <p className="text-sm sm:text-base md:text-lg lg:text-lg">{selectedNote.content}</p>
+<div className="bg-white p-2 sm:p-4 md:p-6 rounded-md overflow-hidden">
+  <p className="text-sm sm:text-base md:text-lg lg:text-lg max-h-[200px] overflow-y-scroll">
+    {selectedNote.content}
+  </p>
 </div>
         </div>
       </div>

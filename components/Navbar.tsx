@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navbar: React.FC = () => {
   return (
     <header className="bg-gradient-to-r from-indigo-400 to-blue-500 border-b-1 shadow-lg">
-      <div className='flex items-center justify-between max-w-7xl mx-auto px-4 md:px-8 py-4'>
+      <div className='flex items-center justify-between max-w-7xl mx-auto px-4 md:px-8 py-3'>
         <div className='flex items-center'>
           <Link href="/">
             <div className='flex items-center'>
